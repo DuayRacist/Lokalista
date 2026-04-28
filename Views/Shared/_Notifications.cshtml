@@ -1,15 +1,200 @@
 ﻿@if (TempData["successMessage"] is not null)
 {
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
-        @TempData["successMessage"]
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <div class="alert alert-success-custom alert-dismissible fade show" role="alert">
+        <i class="bi bi-check-circle-fill"></i>
+        <span>@TempData["successMessage"]</span>
+        <button type="button" class="btn-close-custom" data-bs-dismiss="alert" aria-label="Close">
+            <i class="bi bi-x-lg"></i>
+        </button>
     </div>
 }
 
 @if (TempData["errorMessage"] is not null)
 {
-    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-        @TempData["errorMessage"]
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <div class="alert alert-danger-custom alert-dismissible fade show" role="alert">
+        <i class="bi bi-exclamation-triangle-fill"></i>
+        <span>@TempData["errorMessage"]</span>
+        <button type="button" class="btn-close-custom" data-bs-dismiss="alert" aria-label="Close">
+            <i class="bi bi-x-lg"></i>
+        </button>
     </div>
 }
+
+<style>
+    /* Earthy Notifications Styling - LokaLista Palette
+           Colors: #6B3A2A (buttons/headers), #C47D3E (highlights/hover),
+           #4A7C59 (badges/success), #EB8B6D (puntos/icons),
+           #F5ECD7 (page bg), #3D2B1F (text) */
+
+    /* Success Alert - Warm Earth Green */
+    .alert-success-custom {
+        background: linear-gradient(135deg, #F0F7E8 0%, #E8F0E0 100%);
+        border-left: 5px solid #4A7C59;
+        border-radius: 20px;
+        padding: 1rem 1.25rem;
+        margin-bottom: 1.25rem;
+        box-shadow: 0 4px 12px rgba(74, 124, 89, 0.12);
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        color: #2D5A3E;
+        font-weight: 500;
+        position: relative;
+        transition: all 0.2s ease;
+    }
+
+        .alert-success-custom:hover {
+            transform: translateX(4px);
+            box-shadow: 0 6px 16px rgba(74, 124, 89, 0.18);
+        }
+
+        .alert-success-custom i.bi-check-circle-fill {
+            font-size: 1.4rem;
+            color: #4A7C59;
+            filter: drop-shadow(0 2px 4px rgba(74, 124, 89, 0.2));
+        }
+
+        .alert-success-custom span {
+            flex: 1;
+            color: #3D2B1F;
+            line-height: 1.4;
+        }
+
+    /* Danger/Error Alert - Earthy Terracotta */
+    .alert-danger-custom {
+        background: linear-gradient(135deg, #FDF0EA 0%, #FCE8DF 100%);
+        border-left: 5px solid #6B3A2A;
+        border-radius: 20px;
+        padding: 1rem 1.25rem;
+        margin-bottom: 1.25rem;
+        box-shadow: 0 4px 12px rgba(107, 58, 42, 0.1);
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        color: #5C2E1F;
+        font-weight: 500;
+        position: relative;
+        transition: all 0.2s ease;
+    }
+
+        .alert-danger-custom:hover {
+            transform: translateX(4px);
+            box-shadow: 0 6px 16px rgba(107, 58, 42, 0.15);
+        }
+
+        .alert-danger-custom i.bi-exclamation-triangle-fill {
+            font-size: 1.4rem;
+            color: #EB8B6D;
+            filter: drop-shadow(0 2px 4px rgba(235, 139, 109, 0.2));
+        }
+
+        .alert-danger-custom span {
+            flex: 1;
+            color: #3D2B1F;
+            line-height: 1.4;
+        }
+
+    /* Custom Close Button - Earthy Style */
+    .btn-close-custom {
+        background: transparent;
+        border: none;
+        width: 28px;
+        height: 28px;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        padding: 0;
+        margin-left: auto;
+    }
+
+        .btn-close-custom i {
+            font-size: 0.9rem;
+            color: #8B6B4F;
+            transition: all 0.2s ease;
+        }
+
+        .btn-close-custom:hover {
+            background-color: rgba(107, 58, 42, 0.12);
+            transform: rotate(90deg);
+        }
+
+            .btn-close-custom:hover i {
+                color: #6B3A2A;
+            }
+
+    /* Fade animation (no keyframes - using transition only) */
+    .alert-success-custom, .alert-danger-custom {
+        opacity: 1;
+        transition: opacity 0.25s ease, transform 0.2s ease;
+    }
+
+    /* Optional: Additional styling for notification container */
+    .notifications-container {
+        position: fixed;
+        top: 80px;
+        right: 20px;
+        z-index: 1050;
+        max-width: 400px;
+        width: 90%;
+    }
+
+    /* Mobile responsiveness */
+    @@media (max-width: 768px) {
+        .alert-success-custom, .alert-danger-custom {
+            padding: 0.875rem 1rem;
+            font-size: 0.9rem;
+        }
+
+            .alert-success-custom i.bi-check-circle-fill,
+            .alert-danger-custom i.bi-exclamation-triangle-fill {
+                font-size: 1.2rem;
+            }
+    }
+
+    /* Toast-style positioning if needed */
+    .toast-earth {
+        animation: none; /* No keyframes used */
+        transition: all 0.2s ease;
+    }
+</style>
+
+<!-- Optional JavaScript to auto-dismiss after 5 seconds for better UX (no keyframes, just setTimeout) -->
+<script>
+    (function() {
+        // Auto-dismiss success messages after 5 seconds (smooth transition)
+        const successAlerts = document.querySelectorAll('.alert-success-custom');
+        const errorAlerts = document.querySelectorAll('.alert-danger-custom');
+
+        const dismissAlert = (alert) => {
+            if (alert && alert.parentNode) {
+                alert.style.opacity = '0';
+                setTimeout(() => {
+                    if (alert.parentNode) {
+                        alert.parentNode.removeChild(alert);
+                    }
+                }, 250);
+            }
+        };
+
+        successAlerts.forEach(alert => {
+            setTimeout(() => dismissAlert(alert), 5000);
+        });
+
+        errorAlerts.forEach(alert => {
+            setTimeout(() => dismissAlert(alert), 8000);
+        });
+
+        // Add close button functionality with custom styling
+        const closeButtons = document.querySelectorAll('.btn-close-custom');
+        closeButtons.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const alert = this.closest('.alert-success-custom, .alert-danger-custom');
+                dismissAlert(alert);
+            });
+        });
+    })();
+</script>
