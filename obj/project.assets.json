@@ -8427,11 +8427,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nashl\\Downloads\\BookShoppingCart-Mvc\\BookShoppingCartMvcUI\\BookShoppingCartMvcUI.csproj",
-      "projectName": "BookShoppingCartMvcUI",
-      "projectPath": "C:\\Users\\nashl\\Downloads\\BookShoppingCart-Mvc\\BookShoppingCartMvcUI\\BookShoppingCartMvcUI.csproj",
+      "projectUniqueName": "C:\\Users\\nashl\\Downloads\\Lokalista\\Lokalista\\Lokalista.csproj",
+      "projectName": "Lokalista",
+      "projectPath": "C:\\Users\\nashl\\Downloads\\Lokalista\\Lokalista\\Lokalista.csproj",
       "packagesPath": "C:\\Users\\nashl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nashl\\Downloads\\BookShoppingCart-Mvc\\BookShoppingCartMvcUI\\obj\\",
+      "outputPath": "C:\\Users\\nashl\\Downloads\\Lokalista\\Lokalista\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

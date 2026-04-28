@@ -1,0 +1,9 @@
+wwwroot\css\bootstrap.min.css
+wwwroot\favicon.ico
+wwwroot\images\107bd2aa-da3d-4d9d-87b8-38afdd3578e7.jpg
+wwwroot\images\2394b231-38b5-4337-8dd5-c08f70fc505e.jpg
+wwwroot\images\428e992a-862c-4a30-b39d-956ace888c60.jpg
+wwwroot\images\hobbit.jfif
+wwwroot\images\NoImage.png
+C:\Users\nashl\Downloads\Lokalista\Lokalista\wwwroot\css\bootstrap.min.css
+C:\Users\nashl\Downloads\Lokalista\Lokalista\wwwroot\favicon.ico
