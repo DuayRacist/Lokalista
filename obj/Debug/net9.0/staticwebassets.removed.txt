@@ -1,0 +1,2 @@
+C:\Users\nashl\Downloads\Lokalista\Lokalista\wwwroot\css\bootstrap.min.css
+C:\Users\nashl\Downloads\Lokalista\Lokalista\wwwroot\favicon.ico

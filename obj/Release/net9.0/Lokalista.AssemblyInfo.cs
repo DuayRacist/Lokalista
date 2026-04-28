@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lokalista")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13b37153688f3160a91f7ef9dd0143513d794453")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a709987e2ee5bd0f7c85aaf31b823981dd8afaec")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lokalista")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lokalista")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

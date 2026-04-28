@@ -8421,23 +8421,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nashl\\.nuget\\packages\\": {},
+    "C:\\Users\\admin\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nashl\\Downloads\\Lokalista\\Lokalista\\Lokalista.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\source\\repos\\Lokalista\\Lokalista.csproj",
       "projectName": "Lokalista",
-      "projectPath": "C:\\Users\\nashl\\Downloads\\Lokalista\\Lokalista\\Lokalista.csproj",
-      "packagesPath": "C:\\Users\\nashl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nashl\\Downloads\\Lokalista\\Lokalista\\obj\\",
+      "projectPath": "C:\\Users\\admin\\source\\repos\\Lokalista\\Lokalista.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\admin\\source\\repos\\Lokalista\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\nashl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8518,7 +8518,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
