@@ -5,5 +5,5 @@ wwwroot\images\2394b231-38b5-4337-8dd5-c08f70fc505e.jpg
 wwwroot\images\428e992a-862c-4a30-b39d-956ace888c60.jpg
 wwwroot\images\hobbit.jfif
 wwwroot\images\NoImage.png
-C:\Users\admin\source\repos\Lokalista\wwwroot\css\bootstrap.min.css
 C:\Users\admin\source\repos\Lokalista\wwwroot\favicon.ico
+C:\Users\admin\source\repos\Lokalista\wwwroot\css\bootstrap.min.css
